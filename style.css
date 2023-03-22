@@ -4,14 +4,37 @@
     box-sizing: border-box;
 }
 
+a {
+font-weight:bold;
+text-decoration:none;
+}
+
+a:link {
+color:#0000FF;
+}
+
+a:visited {
+color:#6600FF;
+}
+
+a:hover {
+color:#FF0099;
+text-decoration:underline;
+}
+
+a:active {
+color:#33CC00;
+}
+
 body{
     display: flex;
-    background-color:#e0ffff
+    background-color:#008b8b
 }
 
 .nav-wrapper{
     height: 100vh;
     width: 18%;
+    background-color:#e0ffff
 }
 .nav{
     margin-top: 43px;
@@ -33,12 +56,14 @@ body{
     height: 100%;
     width: 82%;
 }
+
 .heading{
     margin-top: 35px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 32px;
 }
+
 .contents-wrapper-inner{
     display: flex;
     width: 880px;
@@ -55,6 +80,7 @@ face-photo{
     margin-bottom: 23px;
     border:0
 }
+
 .profile{
     margin-bottom: 40px;
     margin-left: 20px;
@@ -67,12 +93,26 @@ face-photo{
 .content-right{
     width: 530px;
 }
+
 .news-heading{
     margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
     font-weight: normal;
+   color: #daa520;
 }
+
+/* 点滅 */
+.blink {
+	animation: blinking 1s ease-in-out infinite alternate;
+}
+ 
+@keyframes blinking {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
 .news-list{
     margin-right: 10px;
     margin-left: 10px;
